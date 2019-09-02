@@ -25,3 +25,14 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 .idea/
+
+# stuff files
+**/results/*
+**/logs/*
+!**/.empty
+.DS_Store
+*.bak
+
+# cache
+**/__pycache__/
+

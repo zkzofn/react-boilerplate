@@ -1,4 +1,4 @@
-const drawerWidth = 240;
+const drawerWidth = 240
 
 export const styles = theme => ({
   drawer: {
@@ -9,4 +9,4 @@ export const styles = theme => ({
     width: drawerWidth,
   },
   toolbar: theme.mixins.toolbar,
-});
+})

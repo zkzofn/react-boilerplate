@@ -1,22 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import * as serviceWorker from './serviceWorker'
 
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { Router, Route } from 'react-router';
-import { createBrowserHistory } from 'history';
-import reducers from './reducers';
-import promise from 'redux-promise';
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+import { Router, Route } from 'react-router'
+import { createBrowserHistory } from 'history'
+import reducers from './reducers'
+import promise from 'redux-promise'
 
-import App from './containers/App';
+import App from './containers/App'
 
 const createStoreWithMiddleware = applyMiddleware(
   promise
-)(createStore);
+)(createStore)
 
-export const customHistory = createBrowserHistory();
+export const customHistory = createBrowserHistory()
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
@@ -27,6 +27,6 @@ ReactDOM.render(
     </Router>
   </Provider>
   , document.getElementById('root')
-);
+)
 
-serviceWorker.unregister();
+serviceWorker.unregister()
